@@ -8,11 +8,8 @@ public class RandomIterator implements Iterator<Integer> {
     private int min, max;
 
     public RandomIterator(int min, int max) {
-        try {
-            this.min = min;
-            this.max = max + 1;
-        } catch (Exception ignored) {
-        }
+        this.min = min;
+        this.max = max + 1;
     }
     @Override
     public boolean hasNext() {
